@@ -20,7 +20,7 @@ window.rowconfigure(0, weight=1, uniform='a')
 window.rowconfigure((1, 2), weight=3, uniform='a')
 
 # image
-image = Image.open('C:\\Users\\Marek\\OneDrive\\Desktop\\Pers1r\\projects\\games\\bg_image_3.jpg')
+image = Image.open('your_path')
 bg_img = ImageTk.PhotoImage(image)
 canvas = tk.Canvas(window)
 canvas.grid(row=0, column=0, columnspan=10, rowspan=10, sticky='nsew')
@@ -34,7 +34,7 @@ hours = 0
 def get_weather(town):
     global icon, icon_1, hours
 
-    api_key = '118ee1fbcd530d985af2e8ae5d333824'
+    api_key = 'your_api_key'
     api_url = "https://api.openweathermap.org/data/2.5/weather"
     img_link = 'http://openweathermap.org/img/wn/'
 
